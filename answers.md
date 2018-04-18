@@ -6,7 +6,7 @@
 2. Write an explanation, using as much space as you need, relating to how the first stage of execution for this file operates.
     - For example, identify the high level steps in a line by line overview and then define what each of those steps are accomplishing.
     
-#### A. In the compilation phase, the computer searches through all of the code and finds all function declarations and variables. The computer then proceeds to remember them by hoisting them to the top where they await as reference for stage 2, execution. 
+##### A. In the compilation phase, the computer searches through all of the code and finds all function declarations and variables. The computer then proceeds to remember them by hoisting them to the top where they await as reference for stage 2, execution. 
 
 3. Write an explanation, using as much space as you need, relating to how the second stage of execution for this file operates.
     - For example, identify the high level steps in a line by line overview and then define what each of those steps are accomplishing.
