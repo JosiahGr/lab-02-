@@ -6,12 +6,12 @@
 2. Write an explanation, using as much space as you need, relating to how the first stage of execution for this file operates.
     - For example, identify the high level steps in a line by line overview and then define what each of those steps are accomplishing.
     
-##### A. In the compilation phase, the computer searches through all of the code and finds all function declarations and variables. The computer then proceeds to remember them by hoisting them to the top where they await as reference for stage 2, execution. 
+##### A. In the compilation phase, the computer searches through all of the code and finds all function declarations and variables. In this case it first sees the variable foo and a function bar. It hoists them to the top of the program and saves them until called upon for execution. Further more, it looks into baz for the next steps. 
 
 3. Write an explanation, using as much space as you need, relating to how the second stage of execution for this file operates.
     - For example, identify the high level steps in a line by line overview and then define what each of those steps are accomplishing.
    
-##### A. Execution. This is where the computer actually runs through the code and assigns values to the function declarations and variables as they come. 
+##### A. Execution. This is where the computer actually executes the code. The computer assigns values to the variables as it runs through the code, then it executes the functions that were found. In this example, it starts with assigning `foo` a value of `bar`, then executes the function bar(), and then looks "inside" it and executes it's containing code. It will then assign baz to the new variable `foo`. Afterwards it runs baz() and reassigns foo and assigns 'yay' to bam. This in turn will return a function (baz) and it is not (to everyones great dismay) recognized in the global scope.
 
 4. During the second stage of execution how many scopes have been registered by the engine?
     - Which segments of the code do they belong to?
@@ -29,7 +29,7 @@
 
 7. For each line, 16 through 19, what is the return value for each?
 
-##### 16) baz
+##### 16) ReferenceError
 ##### 17) bar
 ##### 18) ReferenceError
 ##### 19) ReferenceError
